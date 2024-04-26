@@ -15,6 +15,10 @@ steps:
     command: |
       npm install -g @cyclonedx/cdxgen
   - type: Command
+    name: "install the dependencies"
+    command: |
+      npm install
+  - type: Command
     name: "Run cdxgen tool"
     command: |
       cdxgen -t js -o artifactSBOM.json --spec-version=1.4
